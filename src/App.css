@@ -1,0 +1,218 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap');
+
+  .App {
+    text-align: center;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .container-fluid img {
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 3px;
+    filter: invert(1);
+  }
+
+  #loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #loading img {
+    height: 60px;
+
+  }
+
+  #type {
+    text-shadow: #282c34;
+    color: #ff7800;
+    font-weight: bold;
+  }
+
+  .menu {
+    height: 45vh;
+    position: relative;
+    font-family: 'Bree Serif', serif;
+  }
+
+  .menu::before {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('./images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-bottom: 3px solid black;
+  }
+
+  .h3 img {
+    height: 57px;
+    filter: invert(1);
+  }
+
+  .h3 {
+    font-size: 2.9rem;
+    color: white
+  }
+
+  .line {
+    height: 10vh;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: linear-gradient(45deg, black, #307f24);
+    color: white;
+
+  }
+
+  .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    /* background: linear-gradient(180deg, #9c0000, black, #890000); */
+    color: white;
+    border-bottom: 2px solid #ffa700;
+    height: 100px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+  }
+
+  .slider-viewport {
+    display: flex;
+    animation: slide 10s linear infinite;
+    /* Adjust the duration as needed */
+  }
+
+  .slider-item {
+    flex: 0 0 100%;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .qrv {
+    font-family: 'Bree Serif', serif;
+    color: #ff8100;
+    border-bottom: 1px solid #f6f6f6;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Style for social media links */
+  .social {
+    margin-top: 10px;
+  }
+
+  .social a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .social a:hover {
+    text-decoration: underline;
+  }
+
+  /* Style for your photo */
+  .profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .slider-item h6 {
+    margin: 0;
+  }
+
+  .newscom-con {
+    background: linear-gradient(45deg, #a6a6a6, transparent);
+    padding: 30px;
+    border-radius: 35px;
+  }
+
+  .slider::before {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 10), rgba(0, 0, 0, 0.7)), url('https://wallpapers.com/images/high/old-newspaper-background-3456-x-2439-42srjmr0il1eg48r.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+
+  .navbar {
+    backdrop-filter: blur(10px);
+    /* Adjust the blur strength as needed */
+    background-color:rgb(0 0 0 / 50%);
+  }
+
+  .navbar a.navbar-brand,
+  .navbar a.nav-link {
+    font-family: 'Bree Serif', serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(255 255 255 / 92%);
+  }
+  
